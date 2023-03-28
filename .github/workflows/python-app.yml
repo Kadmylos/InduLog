@@ -41,7 +41,7 @@ jobs:
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@master
       env:
-        ${{ secrets.PERSONAL_TOKEN }}
+        ${{ secrets.GITHUB_TOKEN }}
         ${{ secrets.SONAR_TOKEN }}
   build-docker-image:
     runs-on: ubuntu-latest
