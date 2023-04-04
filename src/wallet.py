@@ -35,3 +35,4 @@ class Wallet(object):
     def get_balance(self):
         """Returns the current balance of the current Wallet object"""
         return self.balance
+    
